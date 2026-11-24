@@ -1,4 +1,4 @@
-﻿# ðŸ§  AIOS â€” Curso Completo AvanÃ§ado
+# ðŸ§  AIOS â€” Curso Completo AvanÃ§ado
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -49,7 +49,7 @@ Repos de referÃªncia:
 
 ## LicenÃ§a
 
-Material educacional â€” uso livre com atribuiÃ§Ã£o. INEMA.CLUB Â· 2026.
+Material educacional â€” uso livre com atribuiÃ§Ã£o. ARCKHÉ AI Â· 2026.
 
 ---
 

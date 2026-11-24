@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo 2.1 — Kernel + SDK e syscalls | AIOS</title>
+  <title>MÃ³dulo 2.1 â€” Kernel + SDK e syscalls | AIOS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -61,14 +61,14 @@
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
 
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
-  <div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🧠</span><span class="font-bold text-lg hidden sm:inline">AIOS</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+  <div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">ðŸ§ </span><span class="font-bold text-lg hidden sm:inline">AIOS</span></a><span class="text-neutral-600">|</span><a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a></div>
   <div class="flex items-center space-x-1 sm:space-x-2">
     <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
     <a href="../trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Arquitetura</span></a>
-    <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Instalação</span></a>
+    <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">InstalaÃ§Ã£o</span></a>
     <a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">SDK</span></a>
     <a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Agentes</span></a>
-    <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Extensão</span></a>
+    <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">ExtensÃ£o</span></a>
     <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
       <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
       <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
@@ -76,16 +76,16 @@
   </div>
 </div></div></nav>
 
-<nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex items-center space-x-2 text-sm text-neutral-400"><a href="../../index.html" class="hover:text-blue-400">Início</a><span>/</span><a href="index.html" class="hover:text-blue-400">Trilha 2</a><span>/</span><span class="text-blue-400">Módulo 2.1</span></div></nav>
+<nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex items-center space-x-2 text-sm text-neutral-400"><a href="../../index.html" class="hover:text-blue-400">InÃ­cio</a><span>/</span><a href="index.html" class="hover:text-blue-400">Trilha 2</a><span>/</span><span class="text-blue-400">MÃ³dulo 2.1</span></div></nav>
 
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-  <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.1</span>
-  <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔄 Kernel + SDK e syscalls</h1>
-  <p class="text-lg text-neutral-400 max-w-3xl">A fronteira entre seu agente e o resto do mundo. Camadas, abstração, ponte Cerebrum, fluxo de syscall e as duas interfaces oficiais do AIOS.</p>
+  <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.1</span>
+  <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”„ Kernel + SDK e syscalls</h1>
+  <p class="text-lg text-neutral-400 max-w-3xl">A fronteira entre seu agente e o resto do mundo. Camadas, abstraÃ§Ã£o, ponte Cerebrum, fluxo de syscall e as duas interfaces oficiais do AIOS.</p>
   <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-    <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+    <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
     <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~60</div><div class="text-xs text-neutral-400">Minutos</div></div>
-    <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Médio</div><div class="text-xs text-neutral-400">Nível</div></div>
+    <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">MÃ©dio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
     <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Teoria</div><div class="text-xs text-neutral-400">Tipo</div></div>
   </div>
 </div></header>
@@ -93,114 +93,114 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
   <section id="topico-1" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span><h2 class="text-2xl font-bold">🗺️ Visão em camadas — SO clássico vs AIOS</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">A maior virada conceitual do AIOS é tratar o agente como um <strong class="text-blue-400">processo de SO</strong>. No SO clássico você tem aplicações → glibc → kernel → hardware. No AIOS é equivalente: agentes → Cerebrum SDK → AIOS kernel → providers de LLM/storage/tool. Quando você enxerga esse paralelo, todo o resto faz sentido sozinho.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span><h2 class="text-2xl font-bold">ðŸ—ºï¸ VisÃ£o em camadas â€” SO clÃ¡ssico vs AIOS</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">A maior virada conceitual do AIOS Ã© tratar o agente como um <strong class="text-blue-400">processo de SO</strong>. No SO clÃ¡ssico vocÃª tem aplicaÃ§Ãµes â†’ glibc â†’ kernel â†’ hardware. No AIOS Ã© equivalente: agentes â†’ Cerebrum SDK â†’ AIOS kernel â†’ providers de LLM/storage/tool. Quando vocÃª enxerga esse paralelo, todo o resto faz sentido sozinho.</p>
 
     <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">💡</span> As 3 camadas do AIOS</h3>
+      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">ðŸ’¡</span> As 3 camadas do AIOS</h3>
       <ul class="space-y-2 text-neutral-300">
-        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Application Layer</strong> — agentes (seu código, ou AutoGen, OpenAGI, MetaGPT).</span></li>
-        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Kernel Layer</strong> — AIOS kernel com 6 módulos centrais.</span></li>
-        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>OS Layer</strong> — Linux/macOS/Windows + GPU/CPU/rede.</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">â€¢</span><span><strong>Application Layer</strong> â€” agentes (seu cÃ³digo, ou AutoGen, OpenAGI, MetaGPT).</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">â€¢</span><span><strong>Kernel Layer</strong> â€” AIOS kernel com 6 mÃ³dulos centrais.</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">â€¢</span><span><strong>OS Layer</strong> â€” Linux/macOS/Windows + GPU/CPU/rede.</span></li>
       </ul>
     </div>
 
     <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">📊</span> Paralelo Linux × AIOS</h3>
+      <h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">ðŸ“Š</span> Paralelo Linux Ã— AIOS</h3>
       <ul class="space-y-2 text-neutral-300">
-        <li>Aplicações Linux ↔ Agentes AIOS</li>
-        <li>glibc / musl ↔ Cerebrum SDK</li>
-        <li>Linux Kernel ↔ AIOS Kernel</li>
-        <li>Hardware ↔ Providers + GPU + disco</li>
-        <li>Syscall <code>read()</code> ↔ Syscall <code>llm.chat()</code></li>
+        <li>AplicaÃ§Ãµes Linux â†” Agentes AIOS</li>
+        <li>glibc / musl â†” Cerebrum SDK</li>
+        <li>Linux Kernel â†” AIOS Kernel</li>
+        <li>Hardware â†” Providers + GPU + disco</li>
+        <li>Syscall <code>read()</code> â†” Syscall <code>llm.chat()</code></li>
       </ul>
     </div>
 
     <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Dica mental</h3>
-      <p class="text-neutral-300">Quando estiver perdido, pergunte: "se isso fosse Linux, em que camada estaria?". A resposta quase sempre te leva ao módulo certo do AIOS.</p>
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica mental</h3>
+      <p class="text-neutral-300">Quando estiver perdido, pergunte: "se isso fosse Linux, em que camada estaria?". A resposta quase sempre te leva ao mÃ³dulo certo do AIOS.</p>
     </div>
   </section>
 
   <section id="topico-2" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span><h2 class="text-2xl font-bold">🛡️ Kernel como abstração — O que ele esconde</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">O kernel age como <strong class="text-blue-400">abstraction layer</strong> sobre os recursos do agente. Você não chama "OpenAI" — você chama "LLM Core" e o kernel resolve o provider. Você não escreve em "disco" — você grava no "Storage Manager". Essa indireção é o que dá multi-provider, isolamento e auditoria de graça.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span><h2 class="text-2xl font-bold">ðŸ›¡ï¸ Kernel como abstraÃ§Ã£o â€” O que ele esconde</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">O kernel age como <strong class="text-blue-400">abstraction layer</strong> sobre os recursos do agente. VocÃª nÃ£o chama "OpenAI" â€” vocÃª chama "LLM Core" e o kernel resolve o provider. VocÃª nÃ£o escreve em "disco" â€” vocÃª grava no "Storage Manager". Essa indireÃ§Ã£o Ã© o que dÃ¡ multi-provider, isolamento e auditoria de graÃ§a.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-        <h4 class="font-bold text-blue-400 mb-4">✓ O que o kernel esconde</h4>
+        <h4 class="font-bold text-blue-400 mb-4">âœ“ O que o kernel esconde</h4>
         <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Qual provider de LLM está sendo chamado</span></li>
-          <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Onde a memória está fisicamente</span></li>
-          <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Qual scheduler está rodando</span></li>
-          <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Se a tool roda local ou via MCP</span></li>
-          <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Qual GPU/CPU está executando</span></li>
+          <li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Qual provider de LLM estÃ¡ sendo chamado</span></li>
+          <li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Onde a memÃ³ria estÃ¡ fisicamente</span></li>
+          <li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Qual scheduler estÃ¡ rodando</span></li>
+          <li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Se a tool roda local ou via MCP</span></li>
+          <li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Qual GPU/CPU estÃ¡ executando</span></li>
         </ul>
       </div>
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-        <h4 class="font-bold text-red-400 mb-4">✗ O que continua exposto</h4>
+        <h4 class="font-bold text-red-400 mb-4">âœ— O que continua exposto</h4>
         <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Latência real do LLM</span></li>
-          <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Custo por token</span></li>
-          <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Limite de context window</span></li>
-          <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Erros específicos do provider</span></li>
-          <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Qualidade do modelo escolhido</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>LatÃªncia real do LLM</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Custo por token</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Limite de context window</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Erros especÃ­ficos do provider</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Qualidade do modelo escolhido</span></li>
         </ul>
       </div>
     </div>
 
     <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Abstração não é mágica</h3>
-      <p class="text-neutral-300">AIOS abstrai onde dá. Características inerentes ao modelo (latência, qualidade, contexto máximo) continuam responsabilidade do agente entender. Não confunda abstração de interface com abstração de comportamento.</p>
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> AbstraÃ§Ã£o nÃ£o Ã© mÃ¡gica</h3>
+      <p class="text-neutral-300">AIOS abstrai onde dÃ¡. CaracterÃ­sticas inerentes ao modelo (latÃªncia, qualidade, contexto mÃ¡ximo) continuam responsabilidade do agente entender. NÃ£o confunda abstraÃ§Ã£o de interface com abstraÃ§Ã£o de comportamento.</p>
     </div>
   </section>
 
   <section id="topico-3" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span><h2 class="text-2xl font-bold">🌉 Cerebrum SDK — A ponte do agente</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">Cerebrum é a <strong class="text-blue-400">biblioteca Python</strong> que seu agente importa para falar com o kernel. Paper aceito na NAACL 2025. Oferece classes-base de agente, wrappers de syscall e helpers para tools/memory. Sem Cerebrum, você teria que codar o protocolo de syscall na mão.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span><h2 class="text-2xl font-bold">ðŸŒ‰ Cerebrum SDK â€” A ponte do agente</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">Cerebrum Ã© a <strong class="text-blue-400">biblioteca Python</strong> que seu agente importa para falar com o kernel. Paper aceito na NAACL 2025. Oferece classes-base de agente, wrappers de syscall e helpers para tools/memory. Sem Cerebrum, vocÃª teria que codar o protocolo de syscall na mÃ£o.</p>
 
     <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 mb-6 overflow-x-auto">
-      <pre class="text-sm text-blue-400 font-mono"><code># Estrutura típica de uso (esquema)
+      <pre class="text-sm text-blue-400 font-mono"><code># Estrutura tÃ­pica de uso (esquema)
 from cerebrum import Agent, LLMCall, MemoryRead, ToolCall
 
 class ResearchAgent(Agent):
     def run(self, query):
-        # syscall: leitura de memória persistente
+        # syscall: leitura de memÃ³ria persistente
         ctx = MemoryRead(scope="long_term", query=query).execute()
         # syscall: chamada de LLM
         plan = LLMCall(model="claude-sonnet-4", prompt=f"{ctx}\n\n{query}").execute()
-        # syscall: execução de tool (registrada no Tool Manager)
+        # syscall: execuÃ§Ã£o de tool (registrada no Tool Manager)
         result = ToolCall(name="web_search", args={"q": plan.steps[0]}).execute()
         return result</code></pre>
     </div>
 
     <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> O que o SDK te dá</h3>
+      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">ðŸ“Š</span> O que o SDK te dÃ¡</h3>
       <ul class="space-y-2 text-neutral-300">
-        <li><strong>Agent base class</strong> — ciclo de vida padrão</li>
-        <li><strong>Syscall wrappers</strong> — uma classe por tipo (LLM, Memory, Tool, Storage)</li>
-        <li><strong>Decorators</strong> — para registrar tools e expor ao kernel</li>
-        <li><strong>Helpers de testing</strong> — mock kernel para rodar fora de prod</li>
-        <li><strong>Agent hub client</strong> — publicar/baixar agentes da hub</li>
+        <li><strong>Agent base class</strong> â€” ciclo de vida padrÃ£o</li>
+        <li><strong>Syscall wrappers</strong> â€” uma classe por tipo (LLM, Memory, Tool, Storage)</li>
+        <li><strong>Decorators</strong> â€” para registrar tools e expor ao kernel</li>
+        <li><strong>Helpers de testing</strong> â€” mock kernel para rodar fora de prod</li>
+        <li><strong>Agent hub client</strong> â€” publicar/baixar agentes da hub</li>
       </ul>
     </div>
   </section>
 
   <section id="topico-4" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span><h2 class="text-2xl font-bold">📞 Syscalls do agente — A interface fundamental</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">Toda comunicação agente→kernel passa por <strong class="text-blue-400">syscall</strong>. É unidade de trabalho — entra na fila do Scheduler, é despachada para o módulo certo, retorna ao agente. Pensar em syscalls (e não em chamadas diretas) muda como você estrutura o agente: tudo vira request explícito, auditável, schedulável.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span><h2 class="text-2xl font-bold">ðŸ“ž Syscalls do agente â€” A interface fundamental</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">Toda comunicaÃ§Ã£o agenteâ†’kernel passa por <strong class="text-blue-400">syscall</strong>. Ã‰ unidade de trabalho â€” entra na fila do Scheduler, Ã© despachada para o mÃ³dulo certo, retorna ao agente. Pensar em syscalls (e nÃ£o em chamadas diretas) muda como vocÃª estrutura o agente: tudo vira request explÃ­cito, auditÃ¡vel, schedulÃ¡vel.</p>
 
     <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6 overflow-x-auto">
       <table class="w-full text-sm">
         <thead><tr class="border-b border-dark-600">
           <th class="text-left py-3 px-2 text-blue-400 font-semibold">Syscall</th>
-          <th class="text-left py-3 px-2 text-blue-400 font-semibold">Módulo destino</th>
-          <th class="text-left py-3 px-2 text-blue-400 font-semibold">Uso típico</th>
+          <th class="text-left py-3 px-2 text-blue-400 font-semibold">MÃ³dulo destino</th>
+          <th class="text-left py-3 px-2 text-blue-400 font-semibold">Uso tÃ­pico</th>
         </tr></thead>
         <tbody class="text-neutral-300">
-          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>LLMCall</code></td><td class="py-3 px-2">LLM Core</td><td class="py-3 px-2">Geração de texto, raciocínio</td></tr>
-          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>MemoryRead/Write</code></td><td class="py-3 px-2">Memory Manager</td><td class="py-3 px-2">Cache rápido por agente</td></tr>
-          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>StorageRead/Write</code></td><td class="py-3 px-2">Storage Manager</td><td class="py-3 px-2">Persistência em disco</td></tr>
+          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>LLMCall</code></td><td class="py-3 px-2">LLM Core</td><td class="py-3 px-2">GeraÃ§Ã£o de texto, raciocÃ­nio</td></tr>
+          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>MemoryRead/Write</code></td><td class="py-3 px-2">Memory Manager</td><td class="py-3 px-2">Cache rÃ¡pido por agente</td></tr>
+          <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>StorageRead/Write</code></td><td class="py-3 px-2">Storage Manager</td><td class="py-3 px-2">PersistÃªncia em disco</td></tr>
           <tr class="border-b border-dark-700"><td class="py-3 px-2 font-medium"><code>ToolCall</code></td><td class="py-3 px-2">Tool Manager</td><td class="py-3 px-2">Executar ferramenta registrada</td></tr>
           <tr><td class="py-3 px-2 font-medium"><code>ContextSwitch</code></td><td class="py-3 px-2">Context Manager</td><td class="py-3 px-2">Salvar/restaurar agente</td></tr>
         </tbody>
@@ -208,48 +208,48 @@ class ResearchAgent(Agent):
     </div>
 
     <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Custo de pensar em syscalls</h3>
-      <p class="text-neutral-300">Os primeiros dias parecem verboso. Depois fica natural: cada ação importante vira uma linha clara, auditável, schedulável. Vale o investimento.</p>
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Custo de pensar em syscalls</h3>
+      <p class="text-neutral-300">Os primeiros dias parecem verboso. Depois fica natural: cada aÃ§Ã£o importante vira uma linha clara, auditÃ¡vel, schedulÃ¡vel. Vale o investimento.</p>
     </div>
   </section>
 
   <section id="topico-5" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span><h2 class="text-2xl font-bold">⛓️ Chain de syscalls — Como uma query vira N módulos</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">Uma query do usuário raramente vira <strong class="text-blue-400">uma</strong> syscall. Vira uma <strong>cadeia</strong>: LLM → Tool → Storage → LLM → resposta. Cada elo é uma syscall agendada pelo Scheduler. Ver essa cadeia no log de execução é a forma mais rápida de debugar comportamento estranho do agente.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span><h2 class="text-2xl font-bold">â›“ï¸ Chain de syscalls â€” Como uma query vira N mÃ³dulos</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">Uma query do usuÃ¡rio raramente vira <strong class="text-blue-400">uma</strong> syscall. Vira uma <strong>cadeia</strong>: LLM â†’ Tool â†’ Storage â†’ LLM â†’ resposta. Cada elo Ã© uma syscall agendada pelo Scheduler. Ver essa cadeia no log de execuÃ§Ã£o Ã© a forma mais rÃ¡pida de debugar comportamento estranho do agente.</p>
 
-    <h3 class="text-xl font-bold mb-4">Cadeia típica de "Faça pesquisa X"</h3>
+    <h3 class="text-xl font-bold mb-4">Cadeia tÃ­pica de "FaÃ§a pesquisa X"</h3>
     <div class="space-y-6 mb-6">
       <div class="flex items-start space-x-4">
         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLMCall — planejar</h4><p class="text-neutral-300 text-sm">Agente envia query ao LLM Core pedindo um plano. Recebe lista de passos.</p></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLMCall â€” planejar</h4><p class="text-neutral-300 text-sm">Agente envia query ao LLM Core pedindo um plano. Recebe lista de passos.</p></div>
       </div>
       <div class="flex items-start space-x-4">
         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
-        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">MemoryRead — checar contexto</h4><p class="text-neutral-300 text-sm">Recupera histórico de pesquisas anteriores da Memory Manager.</p></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">MemoryRead â€” checar contexto</h4><p class="text-neutral-300 text-sm">Recupera histÃ³rico de pesquisas anteriores da Memory Manager.</p></div>
       </div>
       <div class="flex items-start space-x-4">
         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">ToolCall — buscar</h4><p class="text-neutral-300 text-sm">Executa <code>web_search</code> via Tool Manager. Resultado volta como JSON.</p></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">ToolCall â€” buscar</h4><p class="text-neutral-300 text-sm">Executa <code>web_search</code> via Tool Manager. Resultado volta como JSON.</p></div>
       </div>
       <div class="flex items-start space-x-4">
         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">4</span></div>
-        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">StorageWrite — persistir</h4><p class="text-neutral-300 text-sm">Salva resultados brutos no Storage Manager para reuso futuro.</p></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">StorageWrite â€” persistir</h4><p class="text-neutral-300 text-sm">Salva resultados brutos no Storage Manager para reuso futuro.</p></div>
       </div>
       <div class="flex items-start space-x-4">
         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">5</span></div>
-        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLMCall — sintetizar</h4><p class="text-neutral-300 text-sm">Segunda chamada ao LLM consolida resultados em resposta final.</p></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLMCall â€” sintetizar</h4><p class="text-neutral-300 text-sm">Segunda chamada ao LLM consolida resultados em resposta final.</p></div>
       </div>
     </div>
 
     <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Visualizar a cadeia</h3>
-      <p class="text-neutral-300">Ative log verbose no kernel. Cada syscall aparece com timestamp, agente origem e módulo destino. Esse log é o "strace" do AIOS — indispensável para entender o que está acontecendo.</p>
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Visualizar a cadeia</h3>
+      <p class="text-neutral-300">Ative log verbose no kernel. Cada syscall aparece com timestamp, agente origem e mÃ³dulo destino. Esse log Ã© o "strace" do AIOS â€” indispensÃ¡vel para entender o que estÃ¡ acontecendo.</p>
     </div>
   </section>
 
   <section id="topico-6" class="mb-16">
-    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span><h2 class="text-2xl font-bold">🖥️ Terminal UI vs Web UI — Duas portas de entrada</h2></div>
-    <p class="text-neutral-300 mb-6 leading-relaxed">AIOS já vem com duas interfaces oficiais. <strong class="text-blue-400">Terminal UI</strong> via <code>scripts/run_terminal.py</code> é a entrada de dev — texto puro, rápido, ótima para debugar. <strong>Web UI</strong> é a entrada de produção — você expõe pra quem não vai mexer em shell.</p>
+    <div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span><h2 class="text-2xl font-bold">ðŸ–¥ï¸ Terminal UI vs Web UI â€” Duas portas de entrada</h2></div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">AIOS jÃ¡ vem com duas interfaces oficiais. <strong class="text-blue-400">Terminal UI</strong> via <code>scripts/run_terminal.py</code> Ã© a entrada de dev â€” texto puro, rÃ¡pido, Ã³tima para debugar. <strong>Web UI</strong> Ã© a entrada de produÃ§Ã£o â€” vocÃª expÃµe pra quem nÃ£o vai mexer em shell.</p>
 
     <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 mb-6 overflow-x-auto">
       <pre class="text-sm text-blue-400 font-mono"><code># Subir o kernel
@@ -260,59 +260,59 @@ $ tail -f kernel.log               # observa syscalls em tempo real
 $ python scripts/run_terminal.py
 &gt; me explique como funciona o Scheduler
 
-# Servir Web UI (porta padrão)
+# Servir Web UI (porta padrÃ£o)
 $ python scripts/run_web.py
 # abra http://localhost:8000</code></pre>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-        <h4 class="font-bold text-blue-400 mb-4">Terminal UI — Quando usar</h4>
+        <h4 class="font-bold text-blue-400 mb-4">Terminal UI â€” Quando usar</h4>
         <ul class="space-y-2 text-neutral-300">
           <li>Validar setup rapidamente</li>
           <li>Debugar cadeia de syscalls</li>
           <li>Pipelines automatizados</li>
-          <li>Sessão pessoal de pesquisa</li>
+          <li>SessÃ£o pessoal de pesquisa</li>
         </ul>
       </div>
       <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-        <h4 class="font-bold text-emerald-400 mb-4">Web UI — Quando usar</h4>
+        <h4 class="font-bold text-emerald-400 mb-4">Web UI â€” Quando usar</h4>
         <ul class="space-y-2 text-neutral-300">
-          <li>Usuário final não-técnico</li>
-          <li>Demonstrações</li>
-          <li>Multi-usuário concorrente</li>
-          <li>Integração com SSO</li>
+          <li>UsuÃ¡rio final nÃ£o-tÃ©cnico</li>
+          <li>DemonstraÃ§Ãµes</li>
+          <li>Multi-usuÃ¡rio concorrente</li>
+          <li>IntegraÃ§Ã£o com SSO</li>
         </ul>
       </div>
     </div>
 
     <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Recomendação</h3>
-      <p class="text-neutral-300">Em desenvolvimento, viva no Terminal UI — ele te força a ler o log e entender o sistema. Migre para Web UI só quando for entregar pra outra pessoa.</p>
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> RecomendaÃ§Ã£o</h3>
+      <p class="text-neutral-300">Em desenvolvimento, viva no Terminal UI â€” ele te forÃ§a a ler o log e entender o sistema. Migre para Web UI sÃ³ quando for entregar pra outra pessoa.</p>
     </div>
   </section>
 
   <section class="mb-12">
     <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo</h2>
+      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do MÃ³dulo</h2>
       <div class="space-y-4 mb-8">
-        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">✓</span><div><strong class="text-white">3 camadas:</strong> <span class="text-neutral-300">Application (agentes), Kernel (AIOS), OS (Linux/macOS/Windows).</span></div></div>
-        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">✓</span><div><strong class="text-white">Kernel abstrai recursos.</strong> <span class="text-neutral-300">Esconde provider, storage, scheduling — mantém latência e custo visíveis.</span></div></div>
-        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">✓</span><div><strong class="text-white">Cerebrum é a ponte.</strong> <span class="text-neutral-300">95% do código que você escreve mora aqui.</span></div></div>
-        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">✓</span><div><strong class="text-white">Syscalls são unidade de trabalho.</strong> <span class="text-neutral-300">Tudo agendável, auditável, debugável.</span></div></div>
-        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">✓</span><div><strong class="text-white">Terminal UI para dev, Web UI para usuário.</strong> <span class="text-neutral-300">Duas interfaces oficiais, ambas livres.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">âœ“</span><div><strong class="text-white">3 camadas:</strong> <span class="text-neutral-300">Application (agentes), Kernel (AIOS), OS (Linux/macOS/Windows).</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">âœ“</span><div><strong class="text-white">Kernel abstrai recursos.</strong> <span class="text-neutral-300">Esconde provider, storage, scheduling â€” mantÃ©m latÃªncia e custo visÃ­veis.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">âœ“</span><div><strong class="text-white">Cerebrum Ã© a ponte.</strong> <span class="text-neutral-300">95% do cÃ³digo que vocÃª escreve mora aqui.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">âœ“</span><div><strong class="text-white">Syscalls sÃ£o unidade de trabalho.</strong> <span class="text-neutral-300">Tudo agendÃ¡vel, auditÃ¡vel, debugÃ¡vel.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-blue-400 text-xl">âœ“</span><div><strong class="text-white">Terminal UI para dev, Web UI para usuÃ¡rio.</strong> <span class="text-neutral-300">Duas interfaces oficiais, ambas livres.</span></div></div>
       </div>
-      <div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">2.2 — 🧩 Os 6 módulos do kernel. LLM Core, Memory, Storage, Tool, Scheduler e Context Manager por dentro.</p></div>
+      <div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">PrÃ³ximo mÃ³dulo:</h3><p class="text-neutral-300">2.2 â€” ðŸ§© Os 6 mÃ³dulos do kernel. LLM Core, Memory, Storage, Tool, Scheduler e Context Manager por dentro.</p></div>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar para Trilha</a>
-        <a href="modulo-2-2.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">Próximo: 2.2 →</a>
+        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">â† Voltar para Trilha</a>
+        <a href="modulo-2-2.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">PrÃ³ximo: 2.2 â†’</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>AIOS · Curso Completo · INEMA.CLUB · 2026</p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>AIOS Â· Curso Completo Â· ARCKHÉ AI Â· 2026</p></div></footer>
 
 <script>
   const themeToggle = document.getElementById('theme-toggle');
